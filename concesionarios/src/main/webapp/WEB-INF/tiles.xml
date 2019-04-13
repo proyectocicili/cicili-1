@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+<definition name="plantilla " template="/WEB-INF/views/plantilla/layout.jsp">
+<put-attribute name="header" value="/WEB-INF/views/plantilla/header.jsp" />
+<put-attribute name="body" value="" />
+<put-attribute name="footer" value="/WEB-INF/views/plantilla/footer.jsp" />
+</definition>
+
+<definition name="home" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+</definition>
+
+
+<definition name="pedidos" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/pedidos.jsp" />
+</definition>
+
+<definition name="registro" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/registro.jsp" />
+</definition>
+
+<definition name="aclaracion" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/aclaracion.jsp" />
+</definition>
+
+<definition name="aclaraciones" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/aclaraciones.jsp" />
+</definition>
+
+<definition name="direccion" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/direccion.jsp" />
+</definition>
+
+<definition name="direcciones" extends="plantilla ">
+<put-attribute name="body" value="/WEB-INF/views/direcciones.jsp" />
+</definition>
+
+</tiles-definitions>

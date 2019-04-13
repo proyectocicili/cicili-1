@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	
+<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="org.postgresql.Driver" />
+<property name="url" value="jdbc:postgresql://35.232.110.238:5432/cicili" />
+<property name="username" value="postgres" />
+<property name="password" value="Acceso01," />
+</bean>
+
+<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">
+<property name="dataSource" ref="ds"></property>
+</bean>
+
+<bean id="model_usuario" class="com.cicili.clientes.dao.UsuarioDao">
+<property name="template" ref="jt"></property>
+</bean>
+
+<bean id="model_pedidos" class="com.cicili.clientes.dao.PedidosDao">
+<property name="template" ref="jt"></property>
+</bean>
+	
+	
+		
+</beans>
