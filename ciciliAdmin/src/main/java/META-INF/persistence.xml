@@ -6,6 +6,6 @@
 		<class>com.cicili.app.entity.CclDireccion</class>
 		<class>com.cicili.app.entity.CclAclaracion</class>
 		<class>com.cicili.app.entity.CclPedido</class>
-		<class>com.cicili.app.entity.CclPipa</class>
+		<class>com.cicili.app.entity.CclAutoTanque</class>
 	</persistence-unit>
 </persistence>

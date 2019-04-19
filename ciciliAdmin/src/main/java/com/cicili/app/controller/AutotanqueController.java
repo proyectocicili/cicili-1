@@ -13,13 +13,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cicili.app.dao.AclaracionRepository;
+import com.cicili.app.dao.AutotanqueRepository;
 import com.cicili.app.entity.CclAclaracion;
+
+import com.cicili.app.entity.CclAutotanque;
 import com.cicili.app.entity.CclConcesionario;
 
 @RestController
-public class PipaController {
+public class AutotanqueController {
   @Autowired
-  AclaracionRepository repository;
+  AutotanqueRepository repository;
   
   /*
   @RequestMapping("/save")
@@ -65,25 +68,31 @@ public class PipaController {
   }
   */
   
-  @RequestMapping("/aclaraciones")
-  public List<CclAclaracion> fetchAclaraciones(){
+  @RequestMapping("/autotanques")
+  public List<CclAutotanque> fetchAutoTanques(){
       
     return repository.findAll();
   }
   
-  @RequestMapping("/aclaracionesbyusuario")
-  public List<CclAclaracion> fetchAclaracionesByUsuario(@RequestParam("idUsuario") String idUsuario){
+  @RequestMapping("/autotanquesbyusuario")
+  public List<CclAutotanque> fetchAutotanquesByUsuario(@RequestParam("idUsuario") String idUsuario){
       
     return repository.find(BigInteger.valueOf(Integer.parseInt(idUsuario)));
   }
   
   
-  @PostMapping("/agregaaclaracion")
-  public CclAclaracion addAclaracion(@RequestParam("aclaracion") String aclaracion){
+  @PostMapping("/agregaautotanques")
+  public CclAutotanque addAclaracion(@RequestParam("marca") String marca
+		  ,@RequestParam("modelo") String modelo
+		  ,@RequestParam("clave") String clave
+		  ,@RequestParam("motor") String motor
+		  ,@RequestParam("serie") String serie
+		  ,@RequestParam("color") String color
+		  ,@RequestParam("factura") String factura
+		  ,@RequestParam("status") String status){
 	  
-	  CclAclaracion c = new CclAclaracion();
-	  c.setAclaracion(aclaracion);
-	  c.setUsuario(1);
+	  CclAutotanque c = new CclAutotanque();
+	  
 	  
 	  
 

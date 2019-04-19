@@ -13,12 +13,12 @@ import java.sql.Timestamp;
 @Entity
 @Table(name="ccl_autotanques", schema="cicili")
 @NamedQuery(name="CclPipa.findAll", query="SELECT c FROM CclPipa c")
-public class CclPipa implements Serializable {
+public class CclAutotanque implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="pipa_id_sequence")
-    @SequenceGenerator(name="pipa_id_sequence", sequenceName="cicili.global_id_sequence", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="autotanque_id_sequence")
+    @SequenceGenerator(name="autotanque_id_sequence", sequenceName="cicili.global_id_sequence", allocationSize=1)
 	@Column(name="id")
 	private long id;
 
@@ -55,7 +55,7 @@ public class CclPipa implements Serializable {
 	@Column(name="status")
 	private BigDecimal status;
 
-	public CclPipa() {
+	public CclAutoTanque() {
 	}
 
 	public long getId() {
