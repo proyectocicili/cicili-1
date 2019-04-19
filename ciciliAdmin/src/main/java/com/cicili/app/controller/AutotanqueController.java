@@ -1,5 +1,6 @@
 package com.cicili.app.controller;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -81,7 +82,7 @@ public class AutotanqueController {
   }
   
   
-  @PostMapping("/agregaautotanques")
+  @PostMapping("/agregaautotanque")
   public CclAutotanque addAclaracion(@RequestParam("marca") String marca
 		  ,@RequestParam("modelo") String modelo
 		  ,@RequestParam("clave") String clave
@@ -92,8 +93,15 @@ public class AutotanqueController {
 		  ,@RequestParam("status") String status){
 	  
 	  CclAutotanque c = new CclAutotanque();
-	  
-	  
+	  c.setMarca(Long.parseLong(marca));
+	  c.setModelo(Long.parseLong(modelo));
+	  c.setClave(clave);
+	  c.setMotor(motor);
+	  c.setSerie(serie);
+	  c.setColor(color);
+	  c.setFactura(factura);
+	  c.setStatus(new BigDecimal(status));
+	  c.setMunicipio(1);
 	  
 
     return repository.save(c);

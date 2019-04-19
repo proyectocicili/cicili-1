@@ -17,7 +17,7 @@ public interface AutotanqueRepository extends JpaRepository<CclAutotanque, Long>
 	
 	List<CclAutotanque> findAll();
 
-	@Query("SELECT c FROM CclAutotanque c WHERE usuario=?1 ")
+	@Query("SELECT c FROM CclAutotanque c ")
     public List<CclAutotanque> find(@Param("idUsuario") BigInteger idUsuario);
 
 	
