@@ -11,7 +11,7 @@ import java.sql.Timestamp;
  * 
  */
 @Entity
-@Table(name="ccl_pipas", schema="cicili")
+@Table(name="ccl_autotanques", schema="cicili")
 @NamedQuery(name="CclPipa.findAll", query="SELECT c FROM CclPipa c")
 public class CclPipa implements Serializable {
 	private static final long serialVersionUID = 1L;
