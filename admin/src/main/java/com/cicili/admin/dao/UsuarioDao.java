@@ -5,8 +5,9 @@ import java.sql.Statement;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import com.cicili.admin.entity.*;
 import com.cicili.admin.mapper.UsuarioRowMapper;
-import com.cicili.core.*;
+
 
 public class UsuarioDao {
 

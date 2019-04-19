@@ -1,6 +1,8 @@
 package com.cicili.admin.entity;
 
-public class Asentamiento {
+import java.io.Serializable;
+
+public class Asentamiento implements Serializable{
 
 	Long id;
 	String nombre;

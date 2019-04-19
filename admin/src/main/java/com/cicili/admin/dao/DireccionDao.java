@@ -15,7 +15,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import com.cicili.admin.mapper.DireccionRowMapper;
 import com.cicili.admin.dao.*;
 import com.cicili.admin.mapper.*;
-import com.cicili.core.*;
+import com.cicili.admin.entity.*;
 public class DireccionDao {
 
 	JdbcTemplate model;

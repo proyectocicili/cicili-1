@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.cicili.admin.dao.UsuarioDao;
 
-import com.cicili.core.*;
+import com.cicili.admin.entity.*;
 /**
  * Handles requests for the application home page.
  */
@@ -50,9 +50,9 @@ public class HomeController {
 		if (bindingResult.hasErrors()) {
 			model.addAttribute("error", 1);
 		}else {
-			Usuario login = model_usuario.login(usuario.getCorreo(), tools.sha256(usuario.getPassword()));
+			Usuario login = null ;//model_usuario.login(, tools.sha256(usuario.getPassword()));
 			if(login!=null) {
-				String token = "Nuestra propia implementación de tokens";
+				String token = "Nuestra propia implementaciï¿½n de tokens";
 				request.getSession().setAttribute("token", token);
 				try {
 					response.sendRedirect("login_correcto");

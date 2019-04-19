@@ -13,8 +13,9 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.cicili.admin.dao.*;
+import com.cicili.admin.entity.*;
 import com.cicili.admin.mapper.*;
-import com.cicili.core.*;
+
 
 public class AclaracionDao {
 

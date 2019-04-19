@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.cicili.admin.dao.*;
-import com.cicili.core.*;
+import com.cicili.admin.entity.*;
 @Controller
 public class ConcesionarioController {
 	

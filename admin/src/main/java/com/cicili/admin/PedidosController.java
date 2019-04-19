@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cicili.admin.dao.PedidosDao;
 import com.cicili.admin.dao.UsuarioDao;
-import com.cicili.core.*;
+import com.cicili.admin.entity.*;
 
 @Controller
 public class PedidosController {

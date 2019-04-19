@@ -1,6 +1,8 @@
 package com.cicili.admin.entity;
 
-public class Municipio {
+import java.io.Serializable;
+
+public class Municipio implements Serializable{
 
 	Long id;
 	String nombre;

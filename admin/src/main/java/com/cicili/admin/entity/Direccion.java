@@ -1,6 +1,8 @@
 package com.cicili.admin.entity;
 
-public class Direccion {
+import java.io.Serializable;
+
+public class Direccion implements Serializable {
 	
 	Long idDireccion;
 	String calle;

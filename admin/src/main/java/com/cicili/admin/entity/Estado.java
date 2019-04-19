@@ -1,6 +1,8 @@
 package com.cicili.admin.entity;
 
-public class Estado {
+import java.io.Serializable;
+
+public class Estado implements Serializable{
 
 	Long id;
 	String nombre;

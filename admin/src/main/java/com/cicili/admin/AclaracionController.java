@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cicili.admin.dao.*;
-import com.cicili.core.*;
+import com.cicili.admin.entity.*;
 
 @Controller
 public class AclaracionController {

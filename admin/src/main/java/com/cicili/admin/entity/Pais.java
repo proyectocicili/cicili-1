@@ -1,6 +1,8 @@
 package com.cicili.admin.entity;
 
-public class Pais {
+import java.io.Serializable;
+
+public class Pais implements Serializable{
 
 	Long id;
 	String nombre;

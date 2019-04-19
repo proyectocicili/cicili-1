@@ -6,7 +6,7 @@ import java.sql.Statement;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.cicili.admin.dao.UsuarioDao;
-import com.cicili.core.*;
+import com.cicili.admin.entity.*;
 
 public class ConcesionarioDao {
 
