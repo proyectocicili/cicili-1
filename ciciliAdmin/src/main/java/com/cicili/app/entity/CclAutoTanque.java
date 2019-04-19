@@ -12,7 +12,7 @@ import java.sql.Timestamp;
  */
 @Entity
 @Table(name="ccl_autotanques", schema="cicili")
-@NamedQuery(name="CclPipa.findAll", query="SELECT c FROM CclPipa c")
+@NamedQuery(name="CclAutotanque.findAll", query="SELECT c FROM CclAutotanque c")
 public class CclAutotanque implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -55,7 +55,7 @@ public class CclAutotanque implements Serializable {
 	@Column(name="status")
 	private BigDecimal status;
 
-	public CclAutoTanque() {
+	public CclAutotanque() {
 	}
 
 	public long getId() {
