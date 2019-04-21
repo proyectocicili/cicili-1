@@ -30,13 +30,13 @@ public class UserController {
 	}
 
 	private String getJWTToken(String username) {
-		String secretKey = "mySecretKey";
+		String secretKey = "miLlaV3s3cr3Ta";
 		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
 				.commaSeparatedStringToAuthorityList("ROLE_USER");
 		
 		String token = Jwts
 				.builder()
-				.setId("softtekJWT")
+				.setId("CiciliJWT")
 				.setSubject(username)
 				.claim("authorities",
 						grantedAuthorities.stream()
@@ -47,6 +47,6 @@ public class UserController {
 				.signWith(SignatureAlgorithm.HS512,
 						secretKey.getBytes()).compact();
 
-		return "Bearer " + token;
+		return "CiciliAuth " + token;
 	}
 }

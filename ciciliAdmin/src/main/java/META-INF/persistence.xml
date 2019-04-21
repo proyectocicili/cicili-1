@@ -7,5 +7,7 @@
 		<class>com.cicili.app.entity.CclAclaracion</class>
 		<class>com.cicili.app.entity.CclPedido</class>
 		<class>com.cicili.app.entity.CclAutotanque</class>
+		<class>com.cicili.app.entity.CclConductor</class>
+		<class>com.cicili.app.entity.CclPersona</class>
 	</persistence-unit>
 </persistence>

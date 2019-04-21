@@ -1,4 +1,4 @@
-package es.softtek.jwtDemo;
+package com.cicili.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
