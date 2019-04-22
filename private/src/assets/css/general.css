@@ -1,0 +1,22 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.text-general {
+    font-family: 'PT Sans', sans-serif;
+}
+.font-white {
+    color: #ffffff;
+}
+.font-gray {
+    color: #536382
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #536382;
+    border-color: #6c757d;
+    border-radius: 50px;
+}
+.close-btn {
+    font-size: 55px;
+    color: white;
+}

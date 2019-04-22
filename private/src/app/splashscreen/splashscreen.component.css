@@ -1,0 +1,14 @@
+.splashscreen {
+    background-color: #536382;
+    height: 100vh;
+}
+.height-100vh {
+    height: 100vh;
+    padding: 50px 100px;
+}
+.center-icon {
+    height: 100px;
+}
+.set-icons {
+    height: 350px;
+}

@@ -1,0 +1,42 @@
+<section class="login">
+  <div class="container-fluid">
+    <div class="row align-items-center height-100vh">
+      <div class="col align-self-start">
+        <img src="assets/images/logo_cicili.png" class="login-logo">
+      </div>
+      <div class="col align-self-center">
+
+      </div>
+      <div class="col align-self-center">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets/images/set-icons.png" class="img-fluid d-block mx-auto login-icon py-3">
+            <h3 class="font-white text-center font-weight-bold">Iniciar Sesión</h3>
+
+            <form>
+              <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="email" class="form-control" id="usuario" aria-describedby="usuario" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="">
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <a routerLink="/forgot-password/" href=""><small class="" for="">Olvidé&nbsp;mi&nbsp;contraseña</small></a>
+                </div>
+                <div class="form-group col-sm-6 text-right">
+                    <a routerLink="/register/" href=""><small class="" for="">No&nbsp;tengo&nbsp;una&nbsp;cuenta</small></a>
+                </div>
+              </div>
+              <div class="text-right py-4">
+                <button routerLink="/home/"  class="btn btn-light">Iniciar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
